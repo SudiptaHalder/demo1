@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #016A70, #A2C579);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+#header{
+
+    margin-top: 1%;
+    width: 100%;
+    height: 100vh;
+    background-image: url() ;  
+    background-size:cover ;
+    background-position: center;
+    /* background-attachment: fixed; */
+  }
+  .container{
+      padding: 10px 20%;
+  }
+  nav{
+      background-color: #96C291;
+      opacity: .8;
+      border-radius: 50px;
+      position: fixed;
+      display: flex;
+      /* align-items: center; */
+      margin-left: 80px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      transition:all .2s ease-in-out; 
+      z-index: 9999999999999999999999999;
+  
+  }
+  nav ul li{
+      display:inline-block;
+      list-style: none;
+      margin: 10px 30px;
+      
+  
+  }
+  nav ul li a{
+      color: #016A70;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+  }
+  nav ul li a::after{
+      content: '';
+      width: 0px;
+      height:3px;
+      background:#FFFFDD;
+      opacity: 30%;
+      position: absolute;
+      left:0;
+      bottom:-6px;
+      transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+      width:100%;
+      height:30px;
+      border-radius: 10px;
+      
+  }
+  .header-text{
+      margin-top: 10%;
+      font-size: 30px;  
+      transition-delay: 1s;
+      animation-delay: .2s;
+  }
+  
+  .header-text h1{
+      font-size: 100px;
+      /* font-family: "Protest Riot", sans-serif; */
+     font-family:  "acorn", "Open Sans", "Helvetica Neue", sans-serif;
+      font-weight: 600;
+      animation-delay: 0.3s;
+      text-align: center;
+  }
+  .header-text h2{
+    font-size: 90px;
+    font-family: "acorn",  "Segoe UI",  "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    animation-delay: 0.3s;
+    text-align: center;
+    
+}
+  .header-text p{
+    font-size:20px;
+    font-weight:800px;
+    text-align: center;
+    transform:translateY(-30px);
+    animation: movedown .5s linear forwards;
+    animation-delay: 0.4s;
+  }
+  .header-text h1 span{
+      color:var(--secondary-color);
+  }
+  .anim{
+      opacity: 0;
+      transform: translateY(-30px);
+      animation:movedown 0.5s linear forwards;
+  }
+  @keyframes movedown{
+      100%{
+          opacity: 1;
+          transform: translateY(0px);
+      }
+  }
+  .anim2{
+      opacity: 0;
+      transform: rotateX('180deg');
+      animation:showup .5s linear forwards;
+  }
+  @keyframes showup{
+      100%{
+          opacity:1;
+          transform:rotateX('0deg') ;
+      }
+  }
+  .fa-solid{
+      position: absolute;
+      margin-left: 800px;
+      margin-bottom: px;
+      cursor: pointer;
+      animation-delay: .7s;
+      Color:white;
+     
+  }
+  .fa-solid::before{
+      content: '';
+      top:0;
+      left:0;
+      
+  }
+  .fa-solid:hover{
+      color:#FF0060;
+      
+  }
+  .fa-solid2{
+      position: absolute;
+      margin-left: -60px;
+      margin-top: 240px;
+      font-size:40px;
+      cursor: pointer;
+      animation-delay: 0.7s;
+  }
+  .fa-solid3{
+      position: absolute;
+      margin-left: 90px;
+      margin-top: 50px;
+      cursor: pointer;
+      animation-delay: 0.7s;
+  }
+  .fa-solid4{
+    position: absolute;
+    font-size: 60px;
+    margin-left: -900px;
+    margin-top: 120px;
+    cursor: pointer;
+    animation-delay: 0.7s;
+}
+  .spin{
+    height:200px;
+    width: 200px;
+    margin-right: 130%;
+}
+.spiner{
+    width:10%;
+    height:20%;
+    position: absolute;
+}
+
+
+
+/* ........design..... */
+
+
+#block{
+    padding: 50px;
+    height:100%;
+    width:100%;
+    background: linear-gradient(to right, #016A70, #A2C579);
+    /* border:1 px solid black; */
+    z-index: 0;
+    overflow: hidden;
+}
+#block h1{
+    font-size: 60px;
+    font-family: "Protest Riot", sans-serif;;
+    text-align: center;
+    padding-bottom: 80px;
+    margin-top: -40px;
+}
+.box_two{
+    position: absolute;
+    right: 0px;
+    width: 56%;
+    height:550px;
+    /* border: 3px solid #73AD21; */
+    border-radius: 40px;
+    overflow: hidden;
+    
+    
+}
+.box_two iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_two:hover iframe{
+    transform:scale(1.1);
+}
+.box_two .layer h3{
+       
+      
+}
+.box_three{
+    
+    position:relative;
+    height:550px;
+    width:40%;
+    background-color: linear-gradient(to right, #016A70, #A2C579);
+    /* border:1px solid black; */
+    border-radius: 40px;
+}
+.box_three iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_three:hover iframe{
+    transform:scale(1.1);
+}
+#block_two{
+    padding:30px;
+    height:100%;
+    width:100%;
+    background-color: linear-gradient(to right, #016A70, #A2C579);;
+    /* border:1 px solid black; */
+}
+.box_four{
+    position: absolute;
+    right: 0px;
+    width: 40%;
+    height:550px;
+    /* border: 3px solid #73AD21; */
+    border-radius: 40px;
+    overflow: hidden;
+    
+    
+}
+.box_four iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_four:hover iframe{
+    transform:scale(1.1);
+}
+.box_five{
+    position:relative;
+    height:550px;
+    width:56%;
+    background-color: red;
+    /* border:1px solid black; */
+    border-radius: 40px;
+}
+.box_five iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_five:hover iframe{
+    transform:scale(1.1);
+}
+
+
+#block_three{
+    padding: 50px;
+    height:100%;
+    width:100%;
+    background: linear-gradient(to right, #016A70, #A2C579);
+    /* border:1 px solid black; */
+    z-index: 0;
+    overflow: hidden;
+}
+#block_three h1{
+    font-size: 60px;
+    font-family: "Protest Riot", sans-serif;;
+    text-align: center;
+    padding-bottom: 80px;
+    margin-top: -40px;
+}
+.box_six{
+    position: absolute;
+    right: 0px;
+    width: 56%;
+    height:550px;
+    /* border: 3px solid #73AD21; */
+    border-radius: 40px;
+    overflow: hidden;
+    
+    
+}
+.box_six iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_six:hover iframe{
+    transform:scale(1.1);
+}
+.box_two .layer h3{
+       
+      
+}
+.box_seven{
+    
+    position:relative;
+    height:550px;
+    width:40%;
+    background-color: linear-gradient(to right, #016A70, #A2C579);
+    /* border:1px solid black; */
+    border-radius: 40px;
+}
+.box_seven iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_seven:hover iframe{
+    transform:scale(1.1);
+}
+
+
+
+#block_four{
+    padding:30px;
+    height:100%;
+    width:100%;
+    background-color: linear-gradient(to right, #016A70, #A2C579);;
+    /* border:1 px solid black; */
+}
+.box_eight{
+    position: absolute;
+    right: 0px;
+    width: 40%;
+    height:550px;
+    /* border: 3px solid #73AD21; */
+    border-radius: 40px;
+    overflow: hidden;
+    
+    
+}
+.box_eight iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_eight:hover iframe{
+    transform:scale(1.1);
+}
+.box_nine{
+    position:relative;
+    height:550px;
+    width:56%;
+    background-color: red;
+    /* border:1px solid black; */
+    border-radius: 40px;
+}
+.box_nine iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_nine:hover iframe{
+    transform:scale(1.1);
+}
+
+
+
+#block_five{
+    padding: 50px;
+    height:100%;
+    width:100%;
+    background: linear-gradient(to right, #016A70, #A2C579);
+    /* border:1 px solid black; */
+    z-index: 0;
+    overflow: hidden;
+}
+#block_five h1{
+    font-size: 60px;
+    font-family: "Protest Riot", sans-serif;;
+    text-align: center;
+    padding-bottom: 80px;
+    margin-top: -40px;
+}
+.box_ten{
+    position: absolute;
+    right: 0px;
+    width: 56%;
+    height:550px;
+    /* border: 3px solid #73AD21; */
+    border-radius: 40px;
+    overflow: hidden;
+    
+    
+}
+.box_ten iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_ten:hover iframe{
+    transform:scale(1.1);
+}
+
+.box_eleven{
+    
+    position:relative;
+    height:550px;
+    width:40%;
+    background-color: linear-gradient(to right, #016A70, #A2C579);
+    /* border:1px solid black; */
+    border-radius: 40px;
+}
+.box_eleven iframe{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 40px;
+    transition:transform 0.5s;
+}
+.box_eleven:hover iframe{
+    transform:scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+/* ...........footer........... */
+#block_six{
+    padding: 50px;
+    height:100%;
+    width:100%;
+    background: linear-gradient(to right, #016A70, #A2C579);
+    /* border:1px solid black; */
+    z-index: 0;
+    overflow: hidden;
+}
+
+.box_left{
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height:400px;
+    /* margin-top: 150px; */
+    
+    /* border: 3px solid #73AD21; */
+    border-radius: 40px;
+    overflow: hidden;
+    
+    
+}
+
+
+
+.box_right{
+    
+    position:relative;
+    height:400px;
+    width:35%;
+    background-color: linear-gradient(to right, #016A70, #A2C579);
+    /* border:1px solid black; */
+    border-radius: 40px;
+}
+
+
+form input, form textarea{
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: auto;
+    width: 90%;
+    height: 40px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    background-color: #96C291;
+    box-shadow:4px 4px 25px black;
+}
+
+form .btn2{
+    padding:  14px 16px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor:pointer;
+    border-radius: 30px;
+    margin-left: 35%;
+    background-color: #96C291;
+    box-shadow:4px 4px 25px #FF0060 ;
+    
+}
+.box_left h3{
+    font-size: 30px;
+    margin-left:20%;
+    margin-bottom: -50px;
+    /* border:1px solid black; */
+    width:30%;
+}
+.box_left h4{
+    font-size: 30px;
+    margin-left:60%;
+    margin-top:-39px;
+    padding:20px;
+}
+.box_left h4 a{
+    color: #016A70;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    
+}
+.box_left h4 a:hover{
+    color: #A2C579;
+}
+.box_left ul li{
+    padding:15px;
+    margin-left: 125px;
+    list-style: none;
+    /* border:1px solid black; */
+    width:20%;   
+    box-shadow: 4px 4px 25px black;
+}
+.box_left ul li a{
+    color: #016A70;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+}
+.box_left ul li a:hover{
+    color:#A2C579;
+}
+.copywright{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color:#016A70 ;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+.copywright1{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: var(--secondary-color);
+    font-weight: 300;
+    margin-top: 20px;
+    display: block;
+
+}
+
+/* #footer{
+    width:90%;
+    height:100vh;
+    border:1px solid black;
+    margin: auto;
+}
+#footer h3{
+    font-size: 30px;
+    margin-left:60%;
+    margin-top: 150px;
+}
+#footer h4{
+    font-size: 30px;
+    margin-left:80%;
+    margin-top:10px -30px;
+}
+#footer h4 a{
+    color: #016A70;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+#footer ul li{
+    display:inline-table;
+    list-style:none;
+    margin: 50px 60%;
+    margin-top:-100px;
+    
+
+} */
+/* #footer ul li a{
+    color: #016A70;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+} */
+
+
